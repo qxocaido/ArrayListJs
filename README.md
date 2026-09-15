@@ -14,7 +14,7 @@ const jogos = [
 ## .map
 Ele consegue percorrer por toda lista e manipular cada item, retornando uma nova lista de igual quantidade da lista original
 
-# Exemplo:
+### Exemplo:
 
 ```
 const nomeEpreco = jogos.map(({ nome, preco }) => ({ nome, preco }));
@@ -26,7 +26,7 @@ Nesse exemplo foi passado uma desestruturação dentro dos parâmetros (função
 ## .filter
 Ele irá filtrar (com base em sua preferência) toda a lista original e retornará uma nova lista com igual ou menor quantidade
 
-# Exemplo:
+### Exemplo:
 
 ```
 const precoMaior = jogos.filter(jogo => preco > 65);
@@ -37,9 +37,10 @@ Neste exemplo foi passado um filtro (função callback) para retornar apenas jog
 ## .reduce
 Diferentemente dos .map e .filter, o reduce retornará apenas um único item
 
-# Exemplo:
+### Exemplo:
 
 ```
 const somaPrecos = jogos.reduce((accumulator, produto) => { return accumulator + produto.preco;}, 0);
 console.log(somaPrecos);
 ```
+Dentro da função callback foi utilizado uma variável "accumulator" setada em 0, onde sera armazenada os valores TERMINAR AKI
