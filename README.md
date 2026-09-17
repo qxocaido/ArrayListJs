@@ -43,4 +43,4 @@ Diferentemente dos .map e .filter, o reduce retornará apenas um único item
 const somaPrecos = jogos.reduce((accumulator, produto) => { return accumulator + produto.preco;}, 0);
 console.log(somaPrecos);
 ```
-Dentro da função callback foi utilizado uma variável "accumulator" setada em 0, onde sera armazenada os valores TERMINAR AKI
+Dentro da função callback foi utilizado uma variável "accumulator" setada em 0, e também o acesso do preço de cada jogo para ser somada com accumulator e o resultado ser retornada.
